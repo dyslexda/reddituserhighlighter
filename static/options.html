@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Highlighter and InfoBox Extension Options</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 220px;
+}
+.col-w {
+  float: left;
+  width: 500px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+<div class="col-w">
+  <h2>Extension Settings</h2>
+  <p>
+    <label>
+      <input type="checkbox" id="activeExt">
+      Activate extension
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="activeInfo">
+      Infobox everywhere
+    </label>
+  </p>
+  <br />
+  <h3>Add or remove subreddits:</h3>
+  
+  <div class="row">
+    <div class="column">
+      <div class="row">
+        <h4>Subreddit Name</h4>
+      </div>
+      <div class="row">
+        <b>/r/</b><input type="text" id="sub_id">
+      </div>
+    </div>
+    <div class="column">
+      <div class="row">
+        <h4>Timeframe</h4>
+      </div>
+      <div class="row">
+        <select id="sub_timeframe">
+         <option value="0">Off</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="30">30</option>
+        </select>
+        <button id="add">Add</button>
+      </div>
+    </div>
+  </div><hr />
+  <h3>Current subreddits:</h3>
+  <table id="subtable">
+    <thead>
+      <th>Name</th>
+      <th>Timeframe</th>
+      <th></th>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="list"></div><hr />
+  </br><button id="save">Save</button>
+  <div id="status"></div>
+</div>
+<script src="../src/options.js"></script>
+<script src="../lib/jquery-3.5.1.min.js"></script>
+</body>
+</html>

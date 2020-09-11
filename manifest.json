@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Subreddit History Highlighter",
+  "description": "Highlights Reddit users new to a subreddit",
+  "version": "1.0",
+  "options_page": "static/options.html",
+  "content_scripts": [
+    {
+        "js": ["lib/jquery-3.5.1.min.js","lib/jquery.dataTables.min.js","src/contentscript.js"],
+        "matches": ["https://www.reddit.com/*", "http://www.reddit.com/*"],
+        "css" : ["css/highlighter.css","css/jquery.dataTables.min.css"]
+    }],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ],
+  "icons": { "24": "static/circled-h-24.png",
+             "96": "static/circled-h-96.png"},
+  "web_accessible_resources": ["src/script.js","static/info-popup-24.png","lib/jquery.dataTables.min.js","static/tabs.html"]
+}

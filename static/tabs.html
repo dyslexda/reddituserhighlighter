@@ -1,0 +1,51 @@
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Prev5')">Prev Five</button>
+  <button class="tablinks" onclick="openTab(event, 'Recent')">Recent</button>
+  <button class="tablinks" onclick="openTab(event, 'All')">All</button>
+  <div class="cancel" onclick="closePopup(event)"></div>
+</div>
+
+<!-- Tab content -->
+<div id="Prev5" class="tabcontent dataTables_wrapper">
+  <table id='prev5table' class="display dataTable" style="width:100%" role="grid">
+    <thead>
+      <tr>
+        <th>Subreddit</th>
+        <th>Date</th>
+        <th>Karma</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<div id="Recent" class="tabcontent dataTables_wrapper">
+  <table id='recenttable' class="display dataTable" style="width:100%" role="grid">
+    <thead>
+      <tr>
+        <th>Subreddit</th>
+        <th>Count</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Karma</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<div id="All" class="tabcontent dataTables_wrapper">
+  <table id='alltable' class="display dataTable" style="width:100%" role="grid">
+    <thead>
+      <tr>
+        <th>Subreddit</th>
+        <th>Count</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Karma</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+
