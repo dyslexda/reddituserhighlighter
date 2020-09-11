@@ -18,7 +18,11 @@
 ## Key Features
 
  - Highlights users new to a subreddit (based on their earliest detected comment, checked against desired window set in options)
+ ![Highlights users](https://i.imgur.com/gHFqz3C.png)
  - Optionally appends an infobox to each comment to quickly scan a user's aggregate comment history, including previous five comments, recent (last 50), and all comments
+ ![Previous five](https://i.imgur.com/GjAyrso.png)
+ 
+ ![All comments](https://i.imgur.com/uovACfo.png)
 
 ## Usage
 
